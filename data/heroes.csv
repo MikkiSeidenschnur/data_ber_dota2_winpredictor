@@ -1,0 +1,120 @@
+id,name,role,type
+1,Anti-Mage,Carry,Melee
+2,Axe,Initiator,Melee
+3,Bane,Support,Ranged
+4,Bloodseeker,Carry,Melee
+5,Crystal Maiden,Support,Ranged
+6,Drow Ranger,Carry,Ranged
+7,Earthshaker,Support,Melee
+8,Juggernaut,Carry,Melee
+9,Mirana,Carry,Ranged
+10,Morphling,Carry,Ranged
+11,Shadow Fiend,Carry,Ranged
+12,Phantom Lancer,Carry,Melee
+13,Puck,Initiator,Ranged
+14,Pudge,Disabler,Melee
+15,Razor,Carry,Ranged
+16,Sand King,Initiator,Melee
+17,Storm Spirit,Carry,Ranged
+18,Sven,Carry,Melee
+19,Tiny,Carry,Melee
+20,Vengeful Spirit,Support,Ranged
+21,Windranger,Carry,Ranged
+22,Zeus,Nuker,Ranged
+23,Kunkka,Carry,Melee
+25,Lina,Support,Ranged
+26,Lion,Support,Ranged
+27,Shadow Shaman,Support,Ranged
+28,Slardar,Carry,Melee
+29,Tidehunter,Initiator,Melee
+30,Witch Doctor,Support,Ranged
+31,Lich,Support,Ranged
+32,Riki,Carry,Melee
+33,Enigma,Disabler,Ranged
+34,Tinker,Carry,Ranged
+35,Sniper,Carry,Ranged
+36,Necrophos,Carry,Ranged
+37,Warlock,Support,Ranged
+38,Beastmaster,Initiator,Melee
+39,Queen of Pain,Carry,Ranged
+40,Venomancer,Support,Ranged
+41,Faceless Void,Carry,Melee
+42,Wraith King,Carry,Melee
+43,Death Prophet,Carry,Ranged
+44,Phantom Assassin,Carry,Melee
+45,Pugna,Nuker,Ranged
+46,Templar Assassin,Carry,Ranged
+47,Viper,Carry,Ranged
+48,Luna,Carry,Ranged
+49,Dragon Knight,Carry,Melee
+50,Dazzle,Support,Ranged
+51,Clockwerk,Initiator,Melee
+52,Leshrac,Carry,Ranged
+53,Nature's Prophet,Carry,Ranged
+54,Lifestealer,Carry,Melee
+55,Dark Seer,Initiator,Melee
+56,Clinkz,Carry,Ranged
+57,Omniknight,Support,Melee
+58,Enchantress,Support,Ranged
+59,Huskar,Carry,Ranged
+60,Night Stalker,Carry,Melee
+61,Broodmother,Carry,Melee
+62,Bounty Hunter,Escape,Melee
+63,Weaver,Carry,Ranged
+64,Jakiro,Support,Ranged
+65,Batrider,Initiator,Ranged
+66,Chen,Support,Ranged
+67,Spectre,Carry,Melee
+68,Ancient Apparition,Support,Ranged
+69,Doom,Carry,Melee
+70,Ursa,Carry,Melee
+71,Spirit Breaker,Carry,Melee
+72,Gyrocopter,Carry,Ranged
+73,Alchemist,Carry,Melee
+74,Invoker,Carry,Ranged
+75,Silencer,Carry,Ranged
+76,Outworld Devourer,Carry,Ranged
+77,Lycan,Carry,Melee
+78,Brewmaster,Carry,Melee
+79,Shadow Demon,Support,Ranged
+80,Lone Druid,Carry,Ranged
+81,Chaos Knight,Carry,Melee
+82,Meepo,Carry,Melee
+83,Treant Protector,Support,Melee
+84,Ogre Magi,Support,Melee
+85,Undying,Support,Melee
+86,Rubick,Support,Ranged
+87,Disruptor,Support,Ranged
+88,Nyx Assassin,Disabler,Melee
+89,Naga Siren,Carry,Melee
+90,Keeper of the Light,Support,Ranged
+91,Io,Support,Ranged
+92,Visage,Support,Ranged
+93,Slark,Carry,Melee
+94,Medusa,Carry,Ranged
+95,Troll Warlord,Carry,Ranged
+96,Centaur Warrunner,Durable,Melee
+97,Magnus,Initiator,Melee
+98,Timbersaw,Nuker,Melee
+99,Bristleback,Carry,Melee
+100,Tusk,Initiator,Melee
+101,Skywrath Mage,Support,Ranged
+102,Abaddon,Support,Melee
+103,Elder Titan,Initiator,Melee
+104,Legion Commander,Carry,Melee
+105,Techies,Nuker,Ranged
+106,Ember Spirit,Carry,Melee
+107,Earth Spirit,Nuker,Melee
+108,Underlord,Support,Melee
+109,Terrorblade,Carry,Melee
+110,Phoenix,Support,Ranged
+111,Oracle,Support,Ranged
+112,Winter Wyvern,Support,Ranged
+113,Arc Warden,Carry,Ranged
+114,Monkey King,Carry,Melee
+119,Dark Willow,Support,Ranged
+120,Pangolier,Carry,Melee
+121,Grimstroke,Support,Ranged
+126,Void Spirit,Carry,Melee
+128,Snapfire,Support,Ranged
+129,Mars,Carry,Melee
