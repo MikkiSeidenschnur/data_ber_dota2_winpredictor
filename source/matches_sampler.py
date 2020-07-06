@@ -5,6 +5,10 @@ import requests as req
 
 def get_matches_sample(max_requests: int, folder: str, mmr=3850) -> pd.DataFrame:
     """
+    -------------------------------------------------------------------------------------
+    DEPRECATED DATA OBTAINED USING THIS METHOD IS NOT CORRECT BECUASE OF API CONSTRAINTS
+    CHECK match_miner.py functions instead.
+    -------------------------------------------------------------------------------------
     Does a a number of requests to the api denoted by the max_requests argument.
     Returns a .csv file containing all the data found.
     NOTE: Does not group by unique findings.

@@ -1,6 +1,6 @@
 # CSV
-.csv
-
+rawdata
+matchesdata
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
