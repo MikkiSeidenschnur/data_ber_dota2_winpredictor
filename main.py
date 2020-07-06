@@ -1,3 +1,8 @@
-import source.matches_sampler as ms
+import source.match_miner as mm
+import time
+import pandas as pd
 
-ms.get_matches_sample(10800, "rawdata/")
+id_list = pd.read_csv("matchesdata/matches_ids.csv")
+id_list = id_list["match_id"].values.tolist()
+
+mm.get_matches_data(id_list, "matchesdata/")
