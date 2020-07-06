@@ -23,7 +23,7 @@ def get_matches_sample(max_requests: int, folder: str, mmr=3850) -> pd.DataFrame
             matches_data.extend(res.json())
         else:
             # break the loop and end the function
-            print f"There was an error with status_code: {res.status_code}"
+            print(f"There was an error with status_code: {res.status_code}")
             break
         count += 1
         # waits a second before continuing to limit the number of requests per minute to 60
