@@ -48,12 +48,13 @@ def get_matches_data(id_list: list, from_position: int, to_position: int, folder
     radiant_teams = []
     dire_teams = []
 
+    request = 0
     # extract each match in the list
     for i, match_id in enumerate(id_list[from_position:to_position]):
 
         # make request
         res = req.get(f"https://api.opendota.com/api/matches/{match_id}")
-
+        request = i
         # log request number
         print(f"request n° {i+1}")
 
@@ -92,7 +93,8 @@ def get_matches_data(id_list: list, from_position: int, to_position: int, folder
 
     # export csv file
     print("Saving file..")
-    data.to_csv(f"{folder}{int(time.time())}.csv", index=False)
+    data.to_csv(
+        f"{folder}{from_position}-{from_position+request}.csv", index=False)
 
     # end
     return "Done" if done == True else f"Error {error}"
