@@ -38,46 +38,53 @@ def get_match_ids(folder: str):
     return "Done."
 
 
-def get_matches_data(id_list: list, folder: str):
+def get_matches_data(id_list: list, from_position: int, to_position: int, folder: str):
     done = False
     error = ""
 
     # containers
+    match_ids = []
     victor_teams = []
     radiant_teams = []
     dire_teams = []
 
     # extract each match in the list
-    for i, match_id in enumerate(id_list):
+    for i, match_id in enumerate(id_list[from_position:to_position]):
 
         # make request
         res = req.get(f"https://api.opendota.com/api/matches/{match_id}")
 
+        # log request number
+        print(f"request n° {i+1}")
+
         # check for errors
-        if res.status_code == 200:
+        try:
+            if res.status_code == 200:
+                # extract useful data
+                match_ids.append(res.json()["match_id"])
+                victor_teams.append("Radiant" if res.json()[
+                                    "radiant_win"] == True else "Dire")
+                radiant_teams.append(
+                    '-'.join([str(x["hero_id"]) for x in res.json()["players"] if x["isRadiant"] == True]))
+                dire_teams.append(
+                    '-'.join([str(x["hero_id"]) for x in res.json()["players"] if x["isRadiant"] == False]))
 
-            # extract useful data
-            victor_teams.append("Radiant" if res.json()[
-                                "radiant_win"] == True else "Dire")
-            radiant_teams.append(
-                '-'.join([str(x["hero_id"]) for x in res.json()["players"] if x["isRadiant"] == True]))
-            dire_teams.append(
-                '-'.join([str(x["hero_id"]) for x in res.json()["players"] if x["isRadiant"] == False]))
-
-            done = True
-        else:
-            error = f"{res.status_code}"
+                done = True
+            else:
+                error = f"{res.status_code}"
+                done = False
+                break
+        except:
+            error = "There was an exception"
             done = False
+            break
 
         # wait a second
         time.sleep(1)
-
-        # log request number
-        print(f"request n° {i+1}")
     # create data frame
     print("Creating DataFrame..")
     data = pd.DataFrame({
-        "match_id": id_list,
+        "match_id": match_ids,
         "victor_team": victor_teams,
         "radiant_team": radiant_teams,
         "dire_team": dire_teams,
