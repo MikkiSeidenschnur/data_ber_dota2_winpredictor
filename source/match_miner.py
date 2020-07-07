@@ -68,7 +68,6 @@ def get_matches_data(id_list: list, folder: str):
         else:
             error = f"{res.status_code}"
             done = False
-            break
 
         # wait a second
         time.sleep(1)

@@ -7,13 +7,13 @@ id_list = id_list["match_id"].values.tolist()
 
 
 # adjust to start where you want.
-from_position = 0
-until_position = 5000
+from_position = 5001
+until_position = 10000
 
 while from_position < until_position:
     try:
         mm.get_matches_data(
-            id_list[from_position:until_position], "matchesdata/")
+            id_list[from_position:until_position], "/home/fs1m/ironhack/projects/module-2/Real-World-Data/matchesdata/")
         from_position += 1
     except:
         print("trying again...")
