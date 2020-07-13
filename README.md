@@ -43,27 +43,27 @@ Following the previous step, we needed to request each match id from the [Opendo
 ##### 4.3 Getting random data samples
 The random sample data was retrieved with a get request on [Opendota API](https://docs.opendota.com/#tag/public-matches). This data consisted of around 350 matches. 
 
-##### 4.4 Data wrangling and counting wins of hero-vs-hero matchups
+#### 4.4 Counting the picks of each hero
+The least picked hero was "techies" with 38 picks. This hero is therefore picked in less than 1% of the total games. This means that the heroes that was picked the least probably does not represent af decent sample size to make a win prediction. This can be seen in the below image.
+![image](images/story_4.jpg)
+Furthermore, we counted all the heroes against each other, and created a 119x119 pivot table that shows the winrate for all possible hero matchups, as seen below:
+![image](images/heatmaps.jpg)
 
-##### 4.5 Creating a combined winrate for a team
+#### 5. Results/Discussion
+Finally we used our win predictor on the test data, as shown in the below image:
+![image](images/story_2.jpg)
+Above image shows that our win predictor seems to be accurate for around 30-40% of the matches. It is our belief that the inaccuracy of the win predictor can be atrributed to the following points:
 
-#### 5. Results
-Show the results here
-
-#### 6. Discussion/conclusion
 * Sample data retreived from the high elo matches not representative since pro players don't draft badly
 * Skill level of pro players make the difference in high elo matches
-* For further research it should 
+* For further research it should
 
-#### 7. Ideas of further work
+While it seems that the win predictor rejects the hypothesis that the draft matters, we do not have confidence that enough data was used to "train" the model. 
 
-#### 8. Links
-1. Data mining 
-2. Filtering (MMR)
-3. Counts
-4. Combined win rate
-5. Model testing
-# Team Tasks
-Mikki - Created Trello, Filtering
-Edgar - Data Mining
-Regina - Counts
+#### 6. Ideas of further work
+For further work, we would like to increase both the sample data set, but also the test data, to have confidence that our model represents the real world. 
+
+#### 7. Links
+* [What is DOTA2?](https://www.youtube.com/watch?v=9Szj-CloJiI)
+* [Opendota API](https://www.opendota.com/api-keys)
+* [Opendota scraping site](https://www.opendota.com/explorer?minDate=2020-06-13T07%3A39%3A52.077Z)
