@@ -3,7 +3,7 @@
 ##### Contributors: Edgar Peña, Regina Hunter
 ##### Data obtained from [Opendota's API](https://docs.opendota.com/)
 
-![Dota2THEGAME](https://i.imgur.com/alqL68J.jpg "introduction screen")
+![image](images/frontpage.png)
 
 Ironhack data bootcamp in Berlin 31-07-2020
 
